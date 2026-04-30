@@ -1,0 +1,17 @@
+{
+    "id": 2,
+    "name": "Муслим Анзоров",
+    "email": "manzorov22@gmail.com",
+    "active": false,
+    "skills": [
+        "Go",
+        "JavaScript",
+        "Docker",
+        "SQL"
+    ],
+    "address": {
+        "city": "Грозный",
+        "country": "Россия"
+    },
+    "registeredAt": "2024-11-03T08:15:00Z"
+}

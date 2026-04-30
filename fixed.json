@@ -1,0 +1,7 @@
+{
+  "id": 101,
+  "name": "Cat \"Snow\"",
+  "age": 2,
+  "favoriteFoods": ["fish", "chicken"],
+  "owner": null
+}

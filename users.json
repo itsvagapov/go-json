@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Расул",
+        "email": "mmamamamama@gmail.com",
+        "active": true,
+        "address": {
+            "street": "ул. Дадин Айбики 14",
+            "city": "Грозный",
+            "zip": "364020"
+        },
+        "phones": [
+            "89238923992"
+        ],
+        "createdAt": "2024-11-03T08:15:00Z"
+    },
+
+     {
+        "id": 2,
+        "name": "Мансур",
+        "email": "mumumumumu@gmail.com",
+        "active": false,
+        "address": {
+            "street": "ул. Ломоносова 8",
+            "city": "Владикавказ",
+            "zip": "364022"
+        },
+        "phones": [
+            "89898989898"
+        ],
+        "createdAt": "2023-11-03T08:15:00Z"
+    }
+]

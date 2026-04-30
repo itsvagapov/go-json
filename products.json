@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Iphone 7",
+        "price": 20000,
+        "instock": true,
+        "tags": [
+            "electronic",
+            "phones"
+        ]
+    },
+
+    {
+         "id": 2,
+        "title": "Macbook air M2",
+        "price": 90000,
+        "instock": false,
+        "tags": [
+            "electronic",
+            "macbook"
+        ]
+    },
+
+    {
+         "id": 3,
+        "title": "Pen red",
+        "price": 15,
+        "instock": true,
+        "tags": [
+            "stationery",
+            "pens"
+        ]
+    }
+]
