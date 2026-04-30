@@ -40,7 +40,21 @@ type Lesson struct {
     Minutes int    `json:"minutes"`
 }
 
+type Meetup struct {
+    Title   string `json:"title"`
+    Minutes string   `json:"minutes"`
+}
+
 func main() {
+	jsonstr := `{ "title": "Разбор задач", "minutes": "60" }`
+
+	var m Meetup
+
+	if err := json.Unmarshal([]byte(jsonstr), &m); err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(m)
+
 // 	studentJSON := `{
 //   "first_name": "Иса",
 //   "last_name": "Исаев",
@@ -51,11 +65,11 @@ func main() {
 
 	// var s Student
 
-	data := []byte(`{"topic":"Введение в JSON","minutes":45}`)
-	var l Lesson
-	err := json.Unmarshal(data, &l)
-	fmt.Println("Ошибка:", err)
-	fmt.Printf("Результат: %+v\n", l)
+	// data := []byte(`{"topic":"Введение в JSON","minutes":45}`)
+	// var l Lesson
+	// err := json.Unmarshal(data, &l)
+	// fmt.Println("Ошибка:", err)
+	// fmt.Printf("Результат: %+v\n", l)
 
 	// функция json.Unmarshal требует, чтобы передаваемые данные имели указатель на объект/структуру/массив
 
