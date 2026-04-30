@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Война и мир",
+        "author": "Л.Н Толстой",
+        "published_year": 1867,
+        "in_stock": false,
+        "tags": [
+        "books",
+        "literature",
+        "russian",
+        "tolstoy"
+    ]
+    },
+
+    {
+        "id": 2,
+        "title": "Капитанская дочка",
+        "author": "А.С Пушкин",
+        "published_year": 1836,
+        "in_stock": true,
+       "tags": [
+        "books",
+        "literature",
+        "russian",
+        "pushkin"
+    ]
+    }
+]

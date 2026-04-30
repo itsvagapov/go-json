@@ -1,0 +1,13 @@
+{
+    "id": 1,
+    "title": "Му-му",
+    "author": "И.В Тургенев",
+    "published_year": 1854,
+    "in_stock": false,
+    "tags": [
+        "books",
+        "literature",
+        "russian",
+        "turgenev"
+    ]
+}
