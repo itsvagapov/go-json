@@ -35,28 +35,41 @@ type Student struct {
     WantsGo   bool   `json:"wants_go"`
 }
 
-func main() {
-	studentJSON := `{
-  "first_name": "Иса",
-  "last_name": "Исаев",
-  "age": 17,
-  "city": "Грозный",
-  "wants_go": true
-}`
+type Lesson struct {
+    Topic   string `json:"topic"`
+    Minutes int    `json:"minutes"`
+}
 
-	var s Student
+func main() {
+// 	studentJSON := `{
+//   "first_name": "Иса",
+//   "last_name": "Исаев",
+//   "age": 17,
+//   "city": "Грозный",
+//   "wants_go": true
+// }`
+
+	// var s Student
+
+	data := []byte(`{"topic":"Введение в JSON","minutes":45}`)
+	var l Lesson
+	err := json.Unmarshal(data, &l)
+	fmt.Println("Ошибка:", err)
+	fmt.Printf("Результат: %+v\n", l)
+
+	// функция json.Unmarshal требует, чтобы передаваемые данные имели указатель на объект/структуру/массив
 
 	// fmt.Println(studentJSON)
 
-	if err := json.Unmarshal([]byte(studentJSON), &s); err != nil {
-		fmt.Println("Ошибка JSON:", err)
-	}
+	// if err := json.Unmarshal([]byte(studentJSON), &s); err != nil {
+	// 	fmt.Println("Ошибка JSON:", err)
+	// }
 
-	if s.WantsGo && s.Age >= 16 {
-		fmt.Printf("%s %s готов к Буткемпу Intocode в Грозном!\n", s.FirstName, s.LastName)
-	} else if s.Age < 16 {
-		fmt.Println("слишком маленький возраст!")
-	}
+	// if s.WantsGo && s.Age >= 16 {
+	// 	fmt.Printf("%s %s готов к Буткемпу Intocode в Грозном!\n", s.FirstName, s.LastName)
+	// } else if s.Age < 16 {
+	// 	fmt.Println("слишком маленький возраст!")
+	// }
 	
 
 	// fmt.Println(s)
